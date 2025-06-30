@@ -1,12 +1,27 @@
-// src/api/fetch-post.ts
-import api from './ghost'
+// @/shared/lib/fetchPost.ts
+import GhostContentAPI from '@tryghost/content-api'
+
+const api = new GhostContentAPI({
+  url: process.env.GHOST_URL!,
+  key: process.env.GHOST_API_KEY!,
+  version: 'v5.0',
+})
 
 export async function fetchPostBySlug(slug: string) {
-  try {
-    const post = await api.posts.read({ slug }, { include: 'authors' })
-    return post
-  } catch (error) {
-    console.error('[Ghost API] 포스트 로딩 실패:', error)
-    return null
-  }
+  return await api.posts.read(
+    { slug },
+    {
+      include: ['tags', 'authors'],
+      formats: ['html', 'plaintext'],
+    }
+  )
+}
+
+export async function fetchSeriesPosts(seriesSlug: string) {
+  return await api.posts.browse({
+    filter: `primary_tag:${seriesSlug}`,
+    order: 'published_at ASC',
+    include: ['tags'],
+    fields: 'id,title,slug,published_at,custom_excerpt,primary_tag',
+  })
 }
