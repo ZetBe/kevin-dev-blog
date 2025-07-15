@@ -1,0 +1,11 @@
+kevin:
+  name: Kevin
+  title: 취준 안하는 대학생
+  url: https://www.linkedin.com/in/%ED%9D%AC%EC%9B%90-%EC%84%9C-73b092280/
+  image_url: https://github.com/yangshun.png
+  page: true
+  socials:
+    x: yangshunz
+    linkedin: yangshun
+    github: ZetBE
+    newsletter: https://www.greatfrontend.com
