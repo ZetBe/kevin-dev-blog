@@ -1,15 +1,21 @@
 import Giscus from '@giscus/react'
+import React from 'react'
+
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 export default function Comments() {
   const theme = localStorage.getItem('theme')
-  console.log(process.env.REACT_APP_GISCUS_REPO_ID)
+
+  if (!ExecutionEnvironment.canUseDOM) {
+    return null
+  }
   return (
     <Giscus
       id="comments"
       repo="ZetBe/kevin-dev-blog"
-      repoId={process.env.REACT_APP_GISCUS_REPO_ID}
+      repoId="R_kgDOPGn5Og"
       category="General"
-      categoryId={process.env.REACT_APP_GISCUS_CATEGORY_ID}
+      categoryId="DIC_kwDOPGn5Os4Csk6U"
       mapping="pathname"
       reactionsEnabled="1"
       emitMetadata="0"
