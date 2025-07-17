@@ -1,19 +1,20 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+review:
+  label: Review
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+html/css:
+  label: HTML/CSS
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+javascript:
+  label: Javascript
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+typescript:
+  label: Typescript
+
+react:
+  label: React
+
+next.js:
+  label: Next.js
+
+writing:
+  label: Writing
