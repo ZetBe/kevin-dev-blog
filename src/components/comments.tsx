@@ -1,14 +1,14 @@
 import Giscus from '@giscus/react'
-import React from 'react'
+import { useEffect, useState } from 'react'
 
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 export default function Comments() {
-  const theme = localStorage.getItem('theme')
-
   if (!ExecutionEnvironment.canUseDOM) {
     return null
   }
+  const theme = localStorage.getItem('theme')
+
   return (
     <Giscus
       id="comments"

@@ -4,6 +4,7 @@ import type BlogPostItemType from '@theme/BlogPostItem'
 import type { WrapperProps } from '@docusaurus/types'
 import Comments from '@site/src/components/comments'
 import { useLocation } from '@docusaurus/router'
+import BrowserOnly from '@docusaurus/BrowserOnly'
 
 type Props = WrapperProps<typeof BlogPostItemType>
 
@@ -19,11 +20,7 @@ export default function BlogPostItemWrapper(props: Props): ReactNode {
   return (
     <>
       <BlogPostItem {...props} />
-      {shouldShowComments && (
-        <div className="margin-top--lg">
-          <Comments />
-        </div>
-      )}
+      {shouldShowComments && <BrowserOnly>{() => <Comments />}</BrowserOnly>}
     </>
   )
 }
