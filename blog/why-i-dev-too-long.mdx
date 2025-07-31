@@ -5,11 +5,11 @@ tags: [javascript, next.js, html/css]
 summary: |
   간단하게 끝날 것 같은 일이 오래 걸리게 되면서 
   왜이렇게 오래 걸리게 되었고, 어떻게 해결해 나갈지 회고한 글입니다.
-image: https://lh3.google.com/u/0/d/1pl623MRqimPpXU9kSc9gf6S3WyyDllL6=w949-h1347-iv1?auditContext=forDisplay
+image: https://res.cloudinary.com/duadxbqwh/image/upload/v1753776627/thumbnail_slw30i.png
 authors: Kevin
 ---
 
-![thumbnail](https://lh3.google.com/u/0/d/1pl623MRqimPpXU9kSc9gf6S3WyyDllL6=w949-h1347-iv1?auditContext=forDisplay)
+![thumbnail](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776627/thumbnail_slw30i.png)
 
 <!-- truncate -->
 
@@ -17,7 +17,7 @@ authors: Kevin
 
 > 현재 글또 블로그의 검색 기능은 매우 잘 됩니다.
 
-![blog-main](https://lh3.google.com/u/0/d/1hnwRcuRvMtzea-fS00B0AFxbR3p1l4s1=w2560-h1347-iv1?auditContext=forDisplay)
+![blog-main](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776628/blog-main_viikic.png)
 
 여기서 필자는 상단 네비게이션 부분의 `큐레이션`으로 들어가면 되지만.. 오른쪽의 검색 부분으로 필자의 수고를 덜하지 않을까 하는 생각에 검색을 해보기로 했다.
 
@@ -25,7 +25,7 @@ authors: Kevin
 
 검색 입력 칸에 글자가 들어가는 순간, 바로 `Application Error`가 발생한다는 것이다.
 
-![blog-issue](https://lh3.google.com/u/0/d/1iM1iuJ401QmDkZrOfIHho97PNoA-Ms1M=w2560-h1347-iv1?auditContext=forDisplay)
+![blog-issue](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776632/blog-issue_kpfinh.png)
 
 그래서 일단 개발자 도구의 콘솔 부분을 살펴본 결과 다음과 같은 에러가 발생하였다.
 
@@ -42,7 +42,7 @@ TypeError: t.map is not a function
 > 오.. 이거 쉽게 커뮤니티 및 오픈소스에 기여 할 방법이겠구나
 
 하는 생각이 들어 바로 커뮤니티 내에 질문을 남겼다.
-![can-i-pr](https://lh3.google.com/u/0/d/1OuTSHkAiykE8VN7Xx-Dv2wGYEGws3_w5=w949-h1347-iv1?auditContext=forDisplay)
+![can-i-pr](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776626/can-i-pr_hkzx2y.png)
 
 그랬더니 흔쾌히 블로그 운영을 담당해주시는 분 께서 PR을 허락해주셨고,
 어떻게 기여 해야하는지, 해당 깃허브 저장소의 마크다운 문서에 따라서 진행해보았다.
@@ -188,7 +188,7 @@ export default function CustomSearchDialog(
 > 이렇게 된다면, 거의 모든 의존성들을 업그레이드하고, 그로 인해, 검색 부분만 적용한다는 것을 아예 대부분의 파일을 건드리게 될 것이고,
 > 이를 속담으로 표현하자면 `빈대 잡느라 초가삼간 다 태운다`와 같은 상황이 발생할 것이다.
 
-![같이 무너짐](https://lh3.google.com/u/0/d/1QfRjCBvenfxQyUxquc0R2euIDnlPEt61=w2560-h1347-iv1?auditContext=prefetch)
+![같이 무너짐](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776626/burn_tw707v.png)
 
 그렇기 때문에, `fumadocs` 공식 깃허브 저장소의 공식 문서 커밋 이력을 조회하여 최대한 [`14.7.0`버전과 비슷한 버전의 공식 문서](https://github.com/fuma-nama/fumadocs/blob/15c4b8837e34276e6697513441c57b44f482c06c/apps/docs/content/docs/headless/search/orama.mdx)를 살펴보았다.
 
@@ -251,11 +251,11 @@ NFD와 NFC의 차이 표
 그래서 [normalize(정규화)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/normalize) 중 NFC가 한글에서는 필요하다.
 
 그렇게 적용한 결과, 다음과 같이 정상적으로 검색 기능이 동작하는 것을 확인하게 되었다.
-![result](https://lh3.google.com/u/0/d/13biEt6WJFHy6xIAvTBFoZrXlsXrKy7EP=w949-h1347-iv1?auditContext=forDisplay)
+![result](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776626/result_k1tbkt.gif)
 
 ## PR 올리기
 
-![pr](https://lh3.google.com/u/0/d/1uj_0T4EDPrVbM7Yv13YQkrk3FCaY-unX=w949-h1347-iv1?auditContext=forDisplay)
+![pr](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776625/pr_diwz66.png)
 
 그렇게 필자는 글또 블로그 깃허브에 [PR](https://github.com/geultto/geultto.github.io/pull/88)을 올리며
 한가지 수정하게 된 사실에 대해 질문을 남겼다.
@@ -264,18 +264,18 @@ NFD와 NFC의 차이 표
 
 이에 대해 블로그 담당 하시던 분 께서 다음과 같은 답변을 남겨 또 문제 해결 과정을 거쳐야하나 걱정이 들었지만,
 
-![pr-answer](https://lh3.google.com/u/0/d/1lHOuhElPVrk6OjWIb9IHDTKVq4utgcSQ=w949-h1347-iv1?auditContext=forDisplay)
+![pr-answer](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776623/pr-answer_proznq.png)
 
 다행히도, 정적 검색을 `fumadocs`에서 지원해주었기 때문에, 다음과 같이 3개의 파일에 간단히 코드를 수정하여
 
 빌드 시 `SSG` 형식의 렌더링이 적용되는 것을 확인하였다.
 
-![static-commit](https://lh3.google.com/u/0/d/16pJF4TLgMscwlsPNWBafPZejlmYEDFt4=w949-h1347-iv1?auditContext=forDisplay)
-![ssg](https://lh3.google.com/u/0/d/1TsQFhpp94FBvAis9MnV5OGYeF7GaUgFC=w949-h1347-iv1?auditContext=forDisplay)
+![static-commit](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776622/static-commit_upaguf.png)
+![ssg](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776621/ssg_j61hva.png)
 
 그렇게 필자의 PR은 잘 병합되어 해당 저장소에 기여하는 모습을 볼 수 있다.
 
-![ssg](https://lh3.google.com/u/0/d/1DADblANoYwC5y-B1C0_Vgdg_r0i3Ndwg=w949-h1347-iv1?auditContext=prefetch)
+![github](https://res.cloudinary.com/duadxbqwh/image/upload/v1753776621/github_ci43mc.png)
 
 ## 마무리
 
