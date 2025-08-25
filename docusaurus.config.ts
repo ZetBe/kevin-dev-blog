@@ -14,6 +14,16 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'google-site-verification',
+        content: 'zBs1Ng1bhNf_OicTIkiWacrEk6V_WlU_8WV7svSVWtE',
+      },
+    },
+  ],
+
   // Set the production url of your site here
   url: 'https://kevin-dev-blog.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
