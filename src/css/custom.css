@@ -1,35 +1,29 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * 1. 모달이 열렸을 때 배경 스크롤을 막는 스타일
  */
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #7f8c73;
-  --ifm-color-primary-dark: #727e67;
-  --ifm-color-primary-darker: #6c7762;
-  --ifm-color-primary-darkest: #596251;
-  --ifm-color-primary-light: #8c9a7f;
-  --ifm-color-primary-lighter: #92a185;
-  --ifm-color-primary-lightest: #a5b497;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+html.modal-open {
+  overflow: hidden;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #9bb088;
-  --ifm-color-primary-dark: #8fa67c;
-  --ifm-color-primary-darker: #879e75;
-  --ifm-color-primary-darkest: #718362;
-  --ifm-color-primary-light: #a7ba94;
-  --ifm-color-primary-lighter: #afc29b;
-  --ifm-color-primary-lightest: #c7d2af;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+body.modal-open {
+  overflow: hidden;
 }
 
-.navbar {
-  width: 75%;
-  align-self: center;
+/**
+ * 2. 클릭 기능(JavaScript)을 위한 시각적 피드백
+ * - 이 부분이 있어야 사용자가 이미지를 클릭할 수 있다는 것을 인지합니다.
+ */
+.markdown img {
+  cursor: pointer; /* 마우스를 올리면 '클릭 가능' 아이콘으로 변경 */
+  pointer-events: auto; /* 다른 스타일에 의해 클릭이 막히는 현상 방지 */
+}
+
+/**
+ * 3. 사용자 경험(UX) 향상을 위한 순수 시각 효과 (기능과 무관)
+ * - 이 부분은 없어도 기능은 정상 동작합니다.
+ */
+.markdown img:hover {
+  transform: scale(1.02); /* 마우스를 올리면 살짝 커지는 효과 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
