@@ -1,13 +1,13 @@
-import { themes as prismThemes } from 'prism-react-renderer'
-import type { Config } from '@docusaurus/types'
-import type * as Preset from '@docusaurus/preset-classic'
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Kevin dev blog',
-  tagline: '개발과 관련한 이야기를 하는 블로그입니다.',
-  favicon: 'img/favicon.ico',
+  title: "Kevin dev blog",
+  tagline: "개발과 관련한 이야기를 하는 블로그입니다.",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -16,48 +16,48 @@ const config: Config = {
 
   headTags: [
     {
-      tagName: 'meta',
+      tagName: "meta",
       attributes: {
-        name: 'google-site-verification',
-        content: 'zBs1Ng1bhNf_OicTIkiWacrEk6V_WlU_8WV7svSVWtE',
+        name: "google-site-verification",
+        content: "zBs1Ng1bhNf_OicTIkiWacrEk6V_WlU_8WV7svSVWtE",
       },
     },
   ],
 
   // Set the production url of your site here
-  url: 'https://kevin-dev-blog.vercel.app/',
+  url: "https://kevin-dev-blog.vercel.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ZetBe', // Usually your GitHub org/user name.
-  projectName: 'kevin-dev-blog', // Usually your repo name.
+  organizationName: "ZetBe", // Usually your GitHub org/user name.
+  projectName: "kevin-dev-blog", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -65,51 +65,56 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/web-app-manifest-192x192.png',
+    image: "img/web-app-manifest-192x192.png",
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
-      title: 'Kevin dev blog',
+      title: "Kevin dev blog",
       logo: {
-        alt: 'Kevin dev blog',
-        src: 'img/favicon.svg',
+        alt: "Kevin dev blog",
+        src: "img/favicon.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'right',
-          label: 'Docs(wiki)',
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "right",
+          label: "Docs(wiki)",
         },
-        { to: '/blog', label: 'Blog', position: 'right' },
+        { to: "/blog", label: "Blog", position: "right" },
         {
-          href: 'https://github.com/ZetBe',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/ZetBe",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Docs(Wiki)',
-              to: '/docs/intro',
+              label: "Docs(Wiki)",
+              to: "/docs/intro",
             },
           ],
         },
 
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: "Blog",
+              to: "/blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/ZetBe',
+              label: "GitHub",
+              href: "https://github.com/ZetBe",
             },
           ],
         },
@@ -121,6 +126,6 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-}
+};
 
-export default config
+export default config;

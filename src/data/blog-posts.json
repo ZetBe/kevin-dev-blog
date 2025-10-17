@@ -1,5 +1,12 @@
 [
   {
+    "title": "사이트 뜯어보기: 크롬을 중심으로",
+    "date": "2025-10-17",
+    "description": "사이트에 문제가 있다면 한번 확인해 볼만한 크롬 개발자 도구에 대한 저만의 사용법을 담았습니다.\n가볍게 읽어보는 것을 추천합니다.\n",
+    "image": "https://res.cloudinary.com/duadxbqwh/image/upload/v1760667533/thumbnail_u0xjpe.png",
+    "url": "/blog/how-use-chorme-devtools"
+  },
+  {
     "title": "2025년 FEConf 후기",
     "date": "2025-08-25",
     "description": "2025년 8월 23일 국내 최대 프론트엔드 컨퍼런스인 FEConf 행사에 참여했습니다.\n그 곳에서 어떤 인사이트를 얻었고 무엇을 배우게 되었는지 알아봅시다.\n",
