@@ -21,3 +21,9 @@ writing:
 
 blog:
   label: Blog
+
+frontend:
+  label: Frontend
+
+webdev:
+  label: Web Development
