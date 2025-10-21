@@ -1,5 +1,12 @@
 [
   {
+    "title": "‘여루’ 회고 - 사이드 프로젝트 ‘여루’",
+    "date": "2025-10-21",
+    "description": "최근 진행했던 1인 사이드프로젝트 개발 후기 입니다.\n여기서는 간단한 회고와 피드백을 통해 어떻게 나아갈까 이야기하고 있습니다.\n",
+    "image": "https://res.cloudinary.com/duadxbqwh/image/upload/v1761028725/spiderman_o0a5bd.png",
+    "url": "/blog/yeoru-review"
+  },
+  {
     "title": "사이트 뜯어보기: 크롬을 중심으로",
     "date": "2025-10-17",
     "description": "사이트에 문제가 있다면 한번 확인해 볼만한 크롬 개발자 도구에 대한 저만의 사용법을 담았습니다.\n가볍게 읽어보는 것을 추천합니다.\n",
