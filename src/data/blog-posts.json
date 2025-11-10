@@ -1,5 +1,12 @@
 [
   {
+    "title": "서평 - 데일카네기 “인간관계론”",
+    "date": "2025-11-10",
+    "description": "엔지니어링 분야에서 개인의 경제적 성공은 기술적인 부분에서 15퍼센트에 불과하고 \n나머지는 사람들을 다루는 능력에서 비롯된다.\n",
+    "image": "https://res.cloudinary.com/duadxbqwh/image/upload/v1762742494/%EB%8D%B0%EC%9D%BC%EC%B9%B4%EB%84%A4%EA%B8%B0_pjhlxs.png",
+    "url": "/blog/book-review-dale-carnegie-people"
+  },
+  {
     "title": "‘여루’ 회고 - 사이드 프로젝트 ‘여루’",
     "date": "2025-10-21",
     "description": "최근 진행했던 1인 사이드프로젝트 개발 후기 입니다.\n여기서는 간단한 회고와 피드백을 통해 어떻게 나아갈까 이야기하고 있습니다.\n",
