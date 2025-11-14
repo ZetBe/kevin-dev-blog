@@ -22,6 +22,14 @@ const config: Config = {
         content: "zBs1Ng1bhNf_OicTIkiWacrEk6V_WlU_8WV7svSVWtE",
       },
     },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "naver-site-verification",
+        // "YOUR_NAVER_CODE_HERE" 부분에 실제 발급받은 코드를 입력하세요.
+        content: "5aba2019bfe6292b45a82586a60fb3c2d28dd295",
+      },
+    },
   ],
 
   // Set the production url of your site here
