@@ -39,7 +39,7 @@ function ProfileSection() {
       <Heading as="h1" className={styles.profileName}>
         Kevin
       </Heading>
-      <p className={styles.profileTitle}>Product Designer</p>
+      <p className={styles.profileTitle}>Student/Developer</p>
       <div className={styles.socialLinks}>
         {socialLinks.map((link) => (
           <a
