@@ -4,7 +4,6 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
-import Notice from "@site/src/components/Notice";
 
 import styles from "./index.module.css";
 
@@ -32,7 +31,6 @@ const blogPosts = blogPostsData.slice(0, 3);
 function ProfileSection() {
   return (
     <div className={styles.profileSection}>
-      <Notice message="조만간 사이트에 광고가 게재될 수 있습니다.(2월 말 예정)" />
       <img
         src="/img/favicon-96x96.png"
         alt="Profile"
