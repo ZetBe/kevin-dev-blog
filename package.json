@@ -31,7 +31,9 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
-    "react-zoom-pan-pinch": "^3.7.0"
+    "react-zoom-pan-pinch": "^3.7.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.1",
