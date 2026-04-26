@@ -1,8 +1,15 @@
 [
   {
-    "title": "마인크래프트 레드스톤으로 논리회로 게이트를 구현해보자",
+    "title": "2026년 ai/sw 마에스트로 부산센터 면접 후기 (225명 중 164등한 이야기)",
+    "date": "2026-04-26",
+    "description": "2026년 ai/sw 마에스트로(구 sw 마에스트로)에서 면접 본 이야기를 다룹니다.\n하지만 우주 예비라서 최초합 합격 후기는 아니므로 \n이를 반면교사 삼아 내년 ai/sw 마에스트로에서 어떻게 면접 봐야할까 고민하고 있습니다.\n",
+    "image": "https://res.cloudinary.com/duadxbqwh/image/upload/v1777188381/%EC%86%8C%EB%A7%88_dze7f5.png",
+    "url": "/blog/2026-aisw-maestro-interview"
+  },
+  {
+    "title": "마인크래프트 레드스톤으로 논리회로 게이트를 살펴보기",
     "date": "2026-04-09",
-    "description": "마인크래프트의 레드스톤으로 논리회로의 각종 게이트들을 구현하는 글입니다.\n다만 다른 글들과는 다르게 왜 이방식이 효율적이고, 더 좋은 방법은 없는지 서도하고 있습니다.\n",
+    "description": "마인크래프트의 레드스톤으로 논리회로의 각종 게이트들을 구현하는 글입니다.\n다만 다른 글들과는 다르게 왜 이방식이 효율적이고, 더 좋은 방법은 없는지 서술하고 있습니다.\n",
     "image": "https://res.cloudinary.com/dyr7b6lly/image/upload/v1775696226/%EC%8A%A4%ED%8B%B0%EB%B8%8C_v47dcl.png",
     "url": "/blog/make_minecraft-redstone-logicgate"
   },
