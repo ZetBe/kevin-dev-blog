@@ -27,3 +27,6 @@ frontend:
 
 webdev:
   label: Web Development
+
+ai:
+  label: AI
