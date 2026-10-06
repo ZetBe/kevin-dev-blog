@@ -32,6 +32,14 @@ const config: Config = {
         content: "5aba2019bfe6292b45a82586a60fb3c2d28dd295",
       },
     },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "google-adsense-account",
+        content: "ca-pub-4490380849367238", 
+
+      }
+    }
   ],
 
   // Set the production url of your site here
